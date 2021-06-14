@@ -2,6 +2,6 @@
   "name": "container",
   "version": "1.0.0",
   "scripts": {
-    "start": "nodemon container/src"
+    "start": "webpack serve --config container/config/webpack.prod.js"
   }
 }
