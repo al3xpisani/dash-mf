@@ -26,7 +26,7 @@ jobs:
           heroku_email: "alexandre.pisani.ant@gmail.com"
           justlogin: true
       - run: |
-          #git config user.name "al3xpisani" && git config user.email "alexandre.pisani.ant@gmail.com"
+          #git config user.name "al3xpisani" && git config user.email #"alexandre.pisani.ant@gmail.com"
           #You may have to do this as well
           git remote add heroku git@heroku.com:https://git.heroku.com/dash-mf.git
           git push heroku master
