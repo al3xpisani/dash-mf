@@ -38,7 +38,9 @@ jobs:
           heroku_email: "alexandre.pisani.ant@gmail.com"
           justlogin: true
       - run: |
-          git config user.name "al3xpisani" && git config user.email "alexandre.pisani.ant@gmail.com"
           git fetch --all --unshallow
+          git config user.name "al3xpisani" && git config user.email "alexandre.pisani.ant@gmail.com"
           git remote add heroku git@heroku.com:dash-mf.git
-          git push https://heroku:${{secrets.HEROKU_API_KEY}}@git.heroku.com/dash-mf.git master
+          git push
+          https://heroku:${{secrets.HEROKU_API_KEY}}@git.heroku.com/dash-mf.git
+          master --force
