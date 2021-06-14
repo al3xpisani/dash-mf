@@ -43,4 +43,4 @@ jobs:
           git remote add heroku git@heroku.com:dash-mf.git
           git push
           https://heroku:${{secrets.HEROKU_API_KEY}}@git.heroku.com/dash-mf.git
-          master --force
+          HEAD:master --force
