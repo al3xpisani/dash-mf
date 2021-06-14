@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - "dash-MF/container/**"
+      - "./dash-MF/container/**"
 
 defaults:
   run:
