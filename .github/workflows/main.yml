@@ -43,4 +43,4 @@ jobs:
           git config user.name "al3xpisani" && git config user.email "alexandre.pisani.ant@gmail.com"
           git remote add heroku git@heroku.com:dash-mf.git
           git push
-          https://heroku:${{secrets.HEROKU_API_KEY}}@dash-mf.git main
+          https://git.heroku.com/dash-mf.git HEAD:main
