@@ -38,3 +38,6 @@ jobs:
           heroku_email: "alexandre.pisani.ant@gmail.com"
           justlogin: true
           appdir: "container"
+      - run:
+        git push
+          https://heroku:${{secrets.HEROKU_API_KEY}}@git.heroku.com/dash-mf.git main
