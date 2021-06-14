@@ -37,7 +37,7 @@ jobs:
           heroku_app_name: "dash-mf"
           heroku_email: "alexandre.pisani.ant@gmail.com"
           justlogin: true
-          appdir: "dash-MF/container"
+          appdir: "container"
       - run: |
           git fetch --unshallow origin
           git config user.name "al3xpisani" && git config user.email "alexandre.pisani.ant@gmail.com"
