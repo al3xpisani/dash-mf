@@ -1,0 +1,7 @@
+{
+  "name": "container",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "webpack serve --config config/webpack.prod.js"
+  }
+}
