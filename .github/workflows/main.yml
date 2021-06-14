@@ -41,4 +41,4 @@ jobs:
           git fetch --all --unshallow
           git config user.name "al3xpisani" && git config user.email "alexandre.pisani.ant@gmail.com"
           git remote add heroku git@heroku.com:dash-mf.git
-          git push master --force
+          git push main --force
