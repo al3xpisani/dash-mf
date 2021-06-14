@@ -21,6 +21,6 @@ jobs:
       - run: npm run build
       - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
-          heroku_api_key: ${{ self:custom.secrets.prod.gitkey }}
+          heroku_api_key: ${{ file(env.yml):prod:gitkey }}
           heroku_app_name: "dash-mf"
           heroku_email: "alexandre.pisani.ant@gmail.com"
