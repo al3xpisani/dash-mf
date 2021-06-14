@@ -27,5 +27,5 @@ jobs:
           justlogin: true
       - run: |
           #You may have to do this as well
-          git remote add heroku git@heroku.com:https://git.heroku.com/dash-mf.git
+          git remote add heroku git@heroku.com:dash-mf.git
           git push heroku master
