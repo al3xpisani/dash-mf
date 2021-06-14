@@ -24,5 +24,7 @@ jobs:
           heroku_api_key: ${{ SECRETS.prod.HEROKU_KEY }}
           heroku_app_name: "dash-mf"
           heroku_email: "alexandre.pisani.ant@gmail.com"
-          usedocker: true
-          buildpack: "https://github.com/HashNuke/heroku-buildpack-elixir.git"
+      - run: |
+          # git config user.name "<NAME>" && git config user.email "<EMAIL>" # You may have to do this as well
+          git remote add heroku git@heroku.com:https://git.heroku.com/dash-mf.git
+          git push heroku master
