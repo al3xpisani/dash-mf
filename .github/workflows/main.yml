@@ -16,6 +16,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Setup SSH for alexandre.pisani.ant@gmail.com
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          name: id_rsa-alexandre.pisani.ant@gmail.com
+          known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
+          config: |
+            Host herokuapp.com
+              HostName herokuapp.com
+              User alexandre.pisani.ant@gmail.com
+              IdentityFile ~/.ssh/id_rsa-apant@br.ibm.com
+
       - uses: actions/checkout@v2
       - run: npm install
       - run: npm run build
