@@ -24,4 +24,5 @@ jobs:
           heroku_api_key: ${{ SECRETS.prod.HEROKU_KEY }}
           heroku_app_name: "dash-mf"
           heroku_email: "alexandre.pisani.ant@gmail.com"
+          usedocker: true
           buildpack: "https://github.com/HashNuke/heroku-buildpack-elixir.git"
