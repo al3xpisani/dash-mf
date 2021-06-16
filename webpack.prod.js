@@ -15,7 +15,7 @@ const prodConfig = {
       filename: "remoteEntry.js",
 
       exposes: {
-        "./MarketingApp": "marketing/src/bootstrap",
+        "./MarketingApp": "./marketing/src/bootstrap",
       },
     }),
   ],
