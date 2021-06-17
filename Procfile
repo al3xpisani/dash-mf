@@ -1,1 +1,1 @@
-release: cd container && npm install && npm run build && cd .. && node server.js
+release: cd container && npm install && npm run build && cd ../marketing && npm install && npm run build && cd .. && node server.js
