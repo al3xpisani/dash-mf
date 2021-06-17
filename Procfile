@@ -1,1 +1,1 @@
-web: cd container && npm install && cd ../marketing && npm install
+web: node server.js
