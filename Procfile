@@ -1,1 +1,1 @@
-web: node server.js
+web: cd container && npm run build && cd .. && node server.js
