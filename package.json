@@ -2,7 +2,7 @@
   "name": "dash-mf",
   "version": "1.0.0",
   "scripts": {
-    "postinstall": "npm install --prefix container && npm install --prefix marketing && webpack --config webpack.prod.js",
+    "postinstall": "cd container && npm install && cd../marketing && npm install",
     "start": "webpack serve --config webpack.prod.js"
   },
   "dependencies": {
