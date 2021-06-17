@@ -1,2 +1,1 @@
-release: cd container && npm install && cd ../marketing &&
-npm install
+release: cd container && npm install && cd ../marketing && npm install
