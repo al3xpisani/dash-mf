@@ -6,7 +6,6 @@ const domain = process.env.PRODUCTION_DOMAIN;
 
 const prodConfig = {
   mode: "production",
-  entry: "./dist/main.js",
   output: {
     filename: "[name].[contenthash].js",
   },
