@@ -1,2 +1,2 @@
-release: cd container && npm run start && npm run build && cd../marketing && npm
-run start && npm run build
+release: cd container && npm install && npm run build && cd../marketing && npm 
+run && npm run build
