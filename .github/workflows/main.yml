@@ -16,8 +16,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Setup SSH for alexandre.pisani.ant@gmail.com
-
       - uses: actions/checkout@v2
       - run: npm install
       - run: npm run build
