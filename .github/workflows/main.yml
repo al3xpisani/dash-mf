@@ -17,7 +17,6 @@ jobs:
 
     steps:
       - name: Setup SSH for alexandre.pisani.ant@gmail.com
-        uses: shimataro/ssh-key-action@v2
 
       - uses: actions/checkout@v2
       - run: npm install
